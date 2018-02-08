@@ -77,7 +77,7 @@ public class MazeTest {
         mz.closeLastDoor();
         mz.walkTo("G");
     }
-    /*
+    
 
     @Test(expected = DoorAlreadyClosedException.class)
     public void allow_Walker_To_Close_Only_Last_Door() {
@@ -90,6 +90,8 @@ public class MazeTest {
         mz.closeLastDoor();
         mz.walkTo("G");
     }
+    
+    
 
     @Test(expected = ClosedDoorException.class)
     public void not_Allow_Closed_Door_Crossing() {
@@ -105,6 +107,8 @@ public class MazeTest {
         mz.walkTo("F");
         mz.walkTo("G");
     }
+    
+    
 
     @Test(expected = ClosedDoorException.class)
     public void not_Allow_Turn_Back_Through_Closed_Door() {
@@ -141,6 +145,6 @@ public class MazeTest {
         mz.walkTo("G");
         assertThat(mz.readSensors()).isEqualTo("AB;EF");
     }
-*/
+
 
 }

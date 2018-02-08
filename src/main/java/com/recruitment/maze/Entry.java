@@ -24,6 +24,15 @@ public class Entry {
 		return (secondRoom.getName() == name);
 	}
 	
+	public String getDescription() {
+		return (Character.toString(firstRoom.getName()) + Character.toString(secondRoom.getName()));
+	}
+	
+	public boolean hasSensor() {
+		
+		return (gate instanceof GateWithSensor);
+	}
+	
 	
 	
 	
